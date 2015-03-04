@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Basic DataGrid - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="jquery-easyui-1.3.3/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="jquery-easyui-1.3.3/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="jquery-easyui-1.3.3/demo/demo.css">
+	<script type="text/javascript" src="jquery-easyui-1.3.3/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-easyui-1.3.3/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="jquery-easyui-1.3.3/locale/easyui-lang-zh_CN.js"></script>
+</head>
+<body>
+	<table id="dg" title="用户管理" class="easyui-datagrid" style="width:700px;height:365px"
+            url="userList"
+            toolbar="#toolbar" pagination="true"
+            rownumbers="true" fitColumns="true" singleSelect="true">
+        <thead>
+            <tr>
+            	<th field="id" width="50" hidden="true">编号</th>
+                <th field="name" width="50">姓名</th>
+                <th field="phone" width="50">电话</th>
+                <th field="email" width="50">Email</th>
+                <th field="qq" width="50">QQ</th>
+            </tr>
+        </thead>
+    </table>
+    <div id="toolbar">
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newUser()">添加用户</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editUser()">编辑用户</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="deleteUser()">删除用户</a>
+    </div>
+
+</body>
+</html>
